@@ -19,7 +19,7 @@ import CheckoutCard from "../components/CheckoutCard";
 
 // redux setup
 import { connect } from "react-redux";
-import { addToCart } from "../ctx/actions";
+// import { addToCart } from "../ctx/actions";
 
 const mapStateToProps = (state) => {
   return {
@@ -84,7 +84,7 @@ function Cart({ cart }) {
 
             <Stack>{allItems}</Stack>
           </Box>
-          <Box h="full" borderWidth="1px" p={6} h={"fit-content"} shadow="lg">
+          <Box borderWidth="1px" p={6} h={"fit-content"} shadow="lg">
             <Flex justify="space-between">
               <Box>
                 <Text>Total price:</Text>
@@ -107,7 +107,14 @@ function Cart({ cart }) {
               </Text>
             </Flex>
 
-            <Button mt={5} w="full" as="a" href="/checkout" fontWeight="normal" colorScheme="green">
+            <Button
+              mt={5}
+              w="full"
+              as="a"
+              href="/checkout"
+              fontWeight="normal"
+              colorScheme="green"
+            >
               {" "}
               Checkout{" "}
             </Button>

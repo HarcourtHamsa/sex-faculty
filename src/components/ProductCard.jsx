@@ -1,6 +1,5 @@
 import {
   Flex,
-  Circle,
   Box,
   Image,
   Text,
@@ -51,7 +50,6 @@ function Rating({ rating, numReviews }) {
 }
 
 function ProductCard({ productObj }) {
-
   return (
     <Flex
       p={{ md: 5, base: 0 }}
@@ -85,7 +83,6 @@ function ProductCard({ productObj }) {
             <Box d="flex" alignItems="baseline"></Box>
             <Flex mt="1" justifyContent="space-between" alignContent="center">
               <Text
-                fontSize="md"
                 fontWeight="semibold"
                 as="p"
                 // lineHeight="tight"

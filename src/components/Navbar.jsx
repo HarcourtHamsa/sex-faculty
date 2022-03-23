@@ -12,7 +12,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import {
@@ -26,9 +25,7 @@ import { MdShoppingCart } from "react-icons/md";
 
 // redux setup
 import { connect } from "react-redux";
-import { addToCart } from "../ctx/actions";
-
-import Marquee from "react-fast-marquee";
+// import { addToCart } from "../ctx/actions";
 
 const mapStateToProps = (state) => {
   return {
@@ -259,11 +256,11 @@ export default connect(mapStateToProps)(WithSubnavigation);
 const NAV_ITEMS = [
   {
     label: "Home",
-    href: "/"
+    href: "/",
   },
   {
     label: "My Cart",
-    href: "/cart"
+    href: "/cart",
   },
   {
     label: "Checkout",

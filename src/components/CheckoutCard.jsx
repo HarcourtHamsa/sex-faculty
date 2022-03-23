@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Container, Grid, Box, SimpleGrid, Flex } from "@chakra-ui/react";
+import { Text, Box, SimpleGrid, Flex } from "@chakra-ui/react";
 import { FiTrash2 } from "react-icons/fi";
 
 function CheckoutCard({ data }) {

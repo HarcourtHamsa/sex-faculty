@@ -15,8 +15,7 @@ function ProductCardList() {
     client
       .getEntries()
       .then((entry) => setProducts(entry.items))
-      .finally(console.log(products));
-  }, []);
+  }, [products]);
 
   return (
     <SimpleGrid
